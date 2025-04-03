@@ -1,0 +1,18 @@
+.profile-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #27272a;
+}
+
+.profile-picture {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  background-color: #d4d4d8;
+}
