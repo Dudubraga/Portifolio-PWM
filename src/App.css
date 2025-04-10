@@ -1,8 +1,0 @@
-body {
-  background-color: #12355b;
-}
-.container {
-  display: flex;
-  flex-direction: row;
-  min-height: 100vh;
-}
