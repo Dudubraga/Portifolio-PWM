@@ -39,13 +39,13 @@ The portfolio includes a fun implementation of the Bulls and Cows game:
 ```
 portfolio-pwm/
 ├── src/
-│   ├── Css/                # Stylesheets
-│   │   ├── styles.css      # Main CSS for the portfolio
+│   ├── Css/                  # Stylesheets
+│   │   ├── styles.css        # Main CSS
 │   │   ├── password-game.css # CSS for the Password Game
-│   ├── Js/                 # JavaScript files
-│   │   ├── password-game.js # Logic for the Password Game
-│   ├── Images/             # Images used in the portfolio
-│   ├── index.html          # Main portfolio page
-│   ├── password-game.html  # Password Game page
+│   ├── Js/                   # JavaScript files
+│   │   ├── password-game.js  # Logic for the Password Game
+│   ├── Images/               # Images used in the portfolio
+│   ├── index.html            # Main page
+│   ├── password-game.html    # Password Game page
 ├── [README.md]
 ```
