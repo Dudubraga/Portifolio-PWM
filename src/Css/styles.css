@@ -1,20 +1,31 @@
 body {
     background-color: #12355bff;
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 5px;
     padding: 20px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly; */
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+.PageTitle {
+    color: #eaf6ffff;
+    font-size: 2em;
+    text-align: center;
+    margin: 0px;
 }
 /* Navbar CSS */
 nav {
-    background-color: #12355bff;
-    border-bottom: 1px solid #eaf6ffff;
-    padding: 10px;
+    position: fixed;
     display: flex;
     justify-content: space-between;
+    top: 0;
+    
+    background-color: #12355bff;
+    padding: 10px;
+    z-index: 10;
+    width: 95.4%;
+    border-bottom: 1px solid #eaf6ffff;
 }
 nav a {
     color: #eaf6ffff;
@@ -73,12 +84,6 @@ nav ul {
     font-size: 1.2em;
     margin: 20px;
 }
-.PageTitle {
-    color: #eaf6ffff;
-    font-size: 2em;
-    text-align: center;
-    margin: 0px;
-}
 /* Projects CSS */
 .Projects {
     display: flex;
@@ -86,6 +91,7 @@ nav ul {
     justify-content: space-around;
     align-items: stretch;
     padding: 20px;
+    margin-bottom: 40px;
     border-bottom: 1px solid #eaf6ffff;
 }
 .project-card {
@@ -129,19 +135,144 @@ nav ul {
     cursor: pointer;
 }
 .project-card button:hover {
-    background-color: #eaf6ffff;
-    color: #12355bff;
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 @media (max-width: 768px) {
     .Projects {
         flex-direction: column;
         align-items: center;
     }
-
     .project-card {
         width: 90%;
         margin-bottom: 20px;
     }
+}
+/* Contact CSS */
+.Contact {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eaf6ffff;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.contact-container h3 {
+    font-size: 1.5em;
+    color: #eaf6ffff;
+    margin: 5px;
+}
+.Contact p {
+    font-size: 1.2em;
+    color: #eaf6ffff;
+    margin: 5px;
+}
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+}
+.social-media ul li {
+    margin: 0px 10px;
+}
+.social-media img {
+    height: 30px;
+    width: auto;
+    margin-right: 5px;
+}
+.social-media ul li img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 50%; 
+}
+.contact-form label {
+    margin-top: 15px;
+    font-size: 1em;
+    color: #eaf6ffff;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #eaf6ffff;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: none;
+}
+.contact-form button {
+    background-color: #eaf6ffff;
+    color: #12355bff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    align-self: center; 
+    font-size: 1em;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* Skills CSS */
+.Skills {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eaf6ffff;
+}
+.skills-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.skills-category {
+    width: 45%;
+    text-align: center;
+}
+.skills-category h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #eaf6ffff;
+}
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+}
+.skills-icons li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+.skills-icons img {
+    width: auto;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+.skills-icons img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }

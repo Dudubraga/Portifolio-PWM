@@ -9,7 +9,7 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#AboutMe">About Me</a></li>
+            <li><a href="#">About Me</a></li>
             <li><a href="#Projects">Projects</a></li>
             <li><a href="#Contact">Contact</a></li>
             <li><a href="#Skills">Skills</a></li>
@@ -21,7 +21,7 @@
             </select>
         </div>
     </nav>
-    <div id="AboutMe" class="AboutMe">
+    <div class="AboutMe">
         <div class="image-container">
             <img src="./Images/eu-desenho-disney.png" alt="profile-image">
         </div>
@@ -38,8 +38,8 @@
             </p>
         </div>
     </div>
-    <p class="PageTitle">My Projects</p>
-    <div id="Projects" class="Projects">
+    <h1 id="Projects" class="PageTitle">My Projects</h1>
+    <div class="Projects">
         <div class="project-card">
             <h3>Competitive Programming</h3>
             <img src="./Images/competitive-programming.png" alt="">
@@ -97,16 +97,75 @@
             <br><br>
                 You can play the game by clicking the button below.
             </p>
-            <a href="./pswrdGame.html" target="_blank">
-                <button>Try to guess my password</button>
+            <a href="./password-game.html" target="_blank">
+                <button>Try to guess the password</button>
             </a>
         </div>
     </div>
-    <div id="Contact" class="Contact">
-        <!-- To do -->
+    <h1 id="Contact" class="PageTitle">Contact Me</h1>
+    <div class="Contact">
+        <p>Feel free to reach out to me through my social media channels or send me a message directly:</p>
+        <div class="contact-container">
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/eduardo-costa-braga-7a837625b/" target="_blank">
+                            <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/>
+                    </a></li>
+                    <li><a href="https://github.com/Dudubraga" target="_blank">
+                            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="github">
+                    </a></li>
+                    <li><a href="https://discordapp.com/users/390225029784141834" target="_blank">
+                            <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="discord"/>
+                    </a></li>
+                    <li><a href="https://instagram.com/duducbraga" target="_blank">
+                        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="instagram"/>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h3>Send me a message</h3>
+                <form action="https://formspree.io/f/your-form-id" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
     </div>
-    <div id="Skills" class="Skills">
-        <!-- To do -->
+    <h1 id="Skills" class="PageTitle">My Skills</h1>
+    <div class="Skills">
+        <div class="skills-categories">
+            <div class="skills-category">
+                <h3>Programming Languages</h3>
+                <ul class="skills-icons">
+                    <li><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++ Badge"></li>
+                    <li><img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C Badge"></li>
+                    <li><img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" alt="Python Badge"></li>
+                    <li><img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java Badge"></li>
+                    <li><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML Badge"></li>
+                    <li><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge"></li>
+                    <li><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript Badge"></li>
+                    <li><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge"></li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Tools</h3>
+                <ul class="skills-icons">
+                    <li><img src="https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code Badge"></li>
+                    <li><img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git Badge"></li>
+                    <li><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma Badge"></li>
+                    <li><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Badge"></li>
+                    <li><img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native Badge"></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
