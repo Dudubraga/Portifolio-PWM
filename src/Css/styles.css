@@ -14,26 +14,25 @@ html {
     text-align: center;
     margin: 0px;
 }
-/* Navbar CSS */
+/* Nav */
 nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
     top: 0;
-    
-    background-color: #12355bff;
-    padding: 10px;
+    left: 0;
+    right: 0;
+    background-color: #eaf6ffff;
+    padding: 10px 20px;
     z-index: 10;
-    width: 95.4%;
-    border-bottom: 1px solid #eaf6ffff;
 }
-nav a {
-    color: #eaf6ffff;
-    text-decoration: none;
-    margin-right: 20px;
-}
-nav a:hover {
-    text-decoration: underline;
+.menu {
+    display: none;
+    background: none;
+    border: none;
+    color: #12355bff;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 nav ul {
     list-style-type: none;
@@ -43,14 +42,25 @@ nav ul {
     justify-content: start;
     align-items: center;
 }
+nav a {
+    color: #12355bff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.language-selector {
+    margin-left: auto;
+}
 .language-selector select {
-    background-color: #12355bff;
-    color: #eaf6ffff;
+    background-color: #eaf6ffff;
+    color: #12355bff;
     border: none;
     padding: 5px;
     cursor: pointer;
 }
-/* About Me CSS */
+/* About Me */
 .AboutMe {
     display: flex;
     flex-direction: column;
@@ -84,7 +94,7 @@ nav ul {
     font-size: 1.2em;
     margin: 20px;
 }
-/* Projects CSS */
+/* Projects */
 .Projects {
     display: flex;
     flex-direction: row;
@@ -138,17 +148,7 @@ nav ul {
     transform: scale(1.1);
     cursor: pointer;
 }
-@media (max-width: 768px) {
-    .Projects {
-        flex-direction: column;
-        align-items: center;
-    }
-    .project-card {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-}
-/* Contact CSS */
+/* Contact */
 .Contact {
     padding: 20px;
     text-align: center;
@@ -209,6 +209,7 @@ nav ul {
 }
 .contact-form input, .contact-form textarea {
     width: 100%;
+    box-sizing: border-box;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #eaf6ffff;
@@ -231,7 +232,7 @@ nav ul {
     transform: scale(1.1);
     cursor: pointer;
 }
-/* Skills CSS */
+/* Skills */
 .Skills {
     padding: 20px;
     text-align: center;
@@ -265,14 +266,116 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10px;
+    margin: 0px;
+    padding: 5px 10px;
+    background-color: #eaf6ffff;
+    color: #12355bff;
+    border-radius: 10px;
 }
-.skills-icons img {
-    width: auto;
-    height: 30px;
-    transition: transform 0.3s ease-in-out;
-}
-.skills-icons img:hover {
+.skills-icons li:hover {
     transform: scale(1.1);
-    cursor: pointer;
+    cursor: default;
+}
+/* Caber no Celular */
+@media (max-width: 768px) {
+    body {
+        padding: 50px 0px 20px 0px;
+    }
+    /* Nav */
+    .menu {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        background-color: #eaf6ffff;
+        flex-direction: row;
+        position: absolute;
+        justify-content: center;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 10px 0;
+        border-radius: 10px;
+    }
+    nav ul.show {
+        display: flex;
+    }
+    nav ul li {
+        margin: 0 5px; 
+    }
+    nav a {
+        font-size: 0.9em; 
+    }
+    .language-selector {
+        margin-top: 10px; 
+    }
+    /* About Me */
+    .AboutMe {
+        flex-direction: column; 
+        text-align: center;
+        padding: 10px;
+        margin: 10px 0px;
+    }
+    .image-container img {
+        width: 80%; 
+        margin-bottom: 20px;
+    }
+    .welcome-message {
+        padding: 0 10px; 
+    }
+    /* Projects */
+    .Projects {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 10px 0px; 
+    }
+    .project-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .project-card img {
+        width: 100%; 
+        height: auto;
+    }
+    /* Contact */
+    .Contact {
+        padding: 10px; 
+        margin: 10px 0px; 
+    }
+    .contact-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .social-media ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+    .social-media ul li {
+        margin-bottom: 5px; 
+    }
+    .contact-form {
+        width: 90%;
+    }
+    .contact-form form {
+        width: 80%;
+    }
+    /* Skills */
+    .Skills {
+        padding: 10px; 
+        margin: 10px 0px;
+    }
+    .skills-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-category {
+        width: 90%; 
+        margin-bottom: 10px;
+    }
+    .skills-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }

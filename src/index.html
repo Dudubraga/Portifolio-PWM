@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/styles.css">
+    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon" 
+    alt="https://www.flaticon.com/free-icons/sleep Sleep icons created by Good Ware - Flaticon">
     <title>Eduardo Costa Braga</title>
 </head>
+
 <body>
     <nav>
-        <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Contact">Contact</a></li>
-            <li><a href="#Skills">Skills</a></li>
+        <button class="menu" id="menu" onclick="toggleMenu()">
+            ☰
+        </button>
+        <ul onclick="closeMenu()">
+            <li><a id="link-AboutMe" href="#">About Me</a></li>
+            <li><a id="link-Projects" href="#Projects">Projects</a></li>
+            <li><a id="link-Contact" href="#Contact">Contact</a></li>
+            <li><a id="link-Skills" href="#Skills">Skills</a></li>
         </ul>
         <div class="language-selector">
             <select id="language" name="language" onchange="changeLanguage()">
@@ -41,70 +47,70 @@
     <h1 id="Projects" class="PageTitle">My Projects</h1>
     <div class="Projects">
         <div class="project-card">
-            <h3>Competitive Programming</h3>
+            <h3 id="project-title-1">Competitive Programming</h3>
             <img src="./Images/competitive-programming.png" alt="">
-            <p>
+            <p id="project-description-1">
                 Competitive Programming is a mind sport where 
-                programmers compete to <b>solve problems</b> using a 
+                programmers compete to <b>solve problems</b> using 
                 programming languages such as <b>C++</b>.<br>
                 It is a great way to improve your <b>problem-solving
                 skills</b> and learn new <b>algorithms and data structures</b>.
-            <br><br>
+                <br><br>
                 In the past two years I have participated in several 
                 competitions made by the <b>Brazilian Computer Society</b> 
                 and the <b>International Collegiate Programming Contest</b>.
-            <br><br>
+                <br><br>
                 Learn more about my competitive programming by clicking 
                 the button below.
             </p>
             <a href="https://maratona.sbc.org.br/sobre/index.html" target="_blank">
-                <button>Competitive Programming</button>
+                <button id="project-button-1">Learn More</button>
             </a>
         </div>
         <div class="project-card">
-            <h3>Lounge do Açaí</h3>
+            <h3 id="project-title-2">Lounge do Açaí</h3>
             <img src="./Images/lounge-logo.png" alt="">
-            <p>
+            <p id="project-description-2">
                 This project consists of a <b>self-service system</b> 
                 developed to enhance the efficiency and user 
                 experience at the <b>Lounge do Açaí</b>, located at 
                 Universidade Católica de Pernambuco.
-            <br><br>
+                <br><br>
                 The system allows users to place orders through a 
                 <b>mobile application</b>, which are then sent to the 
                 kitchen via a <b>bluetooth printer</b>. This 
                 integration optimizes the ordering process and 
                 improves communication between customers and staff.
-            <br><br>
+                <br><br>
                 Check out the project on GitHub by clicking the button below.
             </p>
             <a href="https://github.com/Dudubraga/Lounge-Acai" target="_blank">
-                <button>Lounge do Açaí</button>
+                <button id="project-button-2">Project's GitHub</button>
             </a>
         </div>
         <div class="project-card">
-            <h3>Password Game</h3>
+            <h3 id="project-title-3">Password Game</h3>
             <img src="./Images/password-game.png" alt="">
-            <p>
+            <p id="project-description-3">
                 This project is a simple game where the user has to 
-                guess a password. The password is a string of 4 
+                <b>guess a password</b>. The password is a string of 4 
                 characters, which can be letters or numbers. The user 
                 has as many attempts to guess the password as they want.
-            <br><br>
+                <br><br>
                 The game is developed using <b>HTML</b>, <b>CSS</b>, and 
                 <b>JavaScript</b>. It is a great way to practice your 
                 programming skills and have fun at the same time.
-            <br><br>
+                <br><br>
                 You can play the game by clicking the button below.
             </p>
             <a href="./password-game.html" target="_blank">
-                <button>Try to guess the password</button>
+                <button id="project-button-3">Try to guess the password</button>
             </a>
         </div>
     </div>
     <h1 id="Contact" class="PageTitle">Contact Me</h1>
     <div class="Contact">
-        <p>Feel free to reach out to me through my social media channels or send me a message directly:</p>
+        <p id="contact-message-1">Feel free to reach out to me through my social media channels or send me a message directly:</p>
         <div class="contact-container">
             <div class="social-media">
                 <ul>
@@ -123,18 +129,18 @@
                 </ul>
             </div>
             <div class="contact-form">
-                <h3>Send me a message</h3>
-                <form action="https://formspree.io/f/your-form-id" method="POST">
-                    <label for="name">Name:</label>
+                <h3 id="contact-message-2">Send me a message</h3>
+                <form action="https://formspree.io/f/mqapnpzv" method="POST">
+                    <label for="name" id="contact-form-1">Name:</label>
                     <input type="text" id="name" name="name" required>
                     
-                    <label for="email">Email:</label>
+                    <label for="email" id="contact-form-2">Email:</label>
                     <input type="email" id="email" name="email" required>
                     
-                    <label for="message">Message:</label>
+                    <label for="message" id="contact-form-3">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                     
-                    <button type="submit">Send</button>
+                    <button type="submit" id="contact-form-button">Send</button>
                 </form>
             </div>
         </div>
@@ -143,29 +149,30 @@
     <div class="Skills">
         <div class="skills-categories">
             <div class="skills-category">
-                <h3>Programming Languages</h3>
+                <h3 id="skills-category-1">Programming Languages</h3>
                 <ul class="skills-icons">
-                    <li><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++ Badge"></li>
-                    <li><img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C Badge"></li>
-                    <li><img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" alt="Python Badge"></li>
-                    <li><img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java Badge"></li>
-                    <li><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML Badge"></li>
-                    <li><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge"></li>
-                    <li><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript Badge"></li>
-                    <li><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge"></li>
+                    <li>C++</li>
+                    <li>C</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
                 </ul>
             </div>
             <div class="skills-category">
-                <h3>Tools</h3>
+                <h3 id="skills-category-2">Tools and Technologies</h3>
                 <ul class="skills-icons">
-                    <li><img src="https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code Badge"></li>
-                    <li><img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git Badge"></li>
-                    <li><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma Badge"></li>
-                    <li><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Badge"></li>
-                    <li><img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native Badge"></li>
+                    <li>VS Code</li>
+                    <li>Git</li>
+                    <li>Figma</li>
+                    <li>React</li>
+                    <li>React Native</li>
                 </ul>
             </div>
         </div>
     </div>
+    <script src="./Js/scripts.js"></script>
 </body>
 </html>
