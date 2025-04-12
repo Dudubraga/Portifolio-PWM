@@ -5,7 +5,7 @@ Welcome to my personal portfolio! This project showcases my projects and skills 
 ![Portfolio Preview](./src/Images/portifolio.png)
 
 ## 🌐 Live Demo
-You can view the live version of my portfolio [here](https://portifolio-pwm-pi.vercel.app/).
+You can view the live version of my portfolio [here](https://portifolio-eduardo-pi.vercel.app/).
 
 ## 📚 Sections
 
