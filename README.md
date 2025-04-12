@@ -5,7 +5,7 @@ Welcome to my personal portfolio! This project showcases my projects and skills 
 ![Portfolio Preview](./src/Images/portifolio.png)
 
 ## 🌐 Live Demo
-You can view the live version of my portfolio [here](https://portifolio-pwm-pi.vercel.app/).
+You can view the live version of my portfolio [here](https://portifolio-eduardo-pi.vercel.app/).
 
 ## 📚 Sections
 
@@ -33,19 +33,3 @@ The portfolio includes a fun implementation of the Bulls and Cows game:
 - Guess a 4-digit password.
 - View your previous attempts and results (Bulls and Cows).
 - Reveal the secret password with a button.
-
-## 📂 Project Structure
-
-```
-portfolio-pwm/
-├── src/
-│   ├── Css/                # Stylesheets
-│   │   ├── styles.css      # Main CSS for the portfolio
-│   │   ├── password-game.css # CSS for the Password Game
-│   ├── Js/                 # JavaScript files
-│   │   ├── password-game.js # Logic for the Password Game
-│   ├── Images/             # Images used in the portfolio
-│   ├── index.html          # Main portfolio page
-│   ├── password-game.html  # Password Game page
-├── [README.md]
-```
