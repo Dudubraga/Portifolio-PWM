@@ -3,6 +3,7 @@
 Welcome to my personal portfolio! This project showcases my projects and skills as a Computer Science student and developer.
 
 ![Portfolio Preview](./src/Images/portifolio.png)
+*Espoço Inicial*
 
 ## 🌐 Live Demo
 You can view the live version of my portfolio [here](https://portifolio-eduardo-pi.vercel.app/).
