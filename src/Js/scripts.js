@@ -45,8 +45,8 @@ const translations = {
         projectsDescription3: `
                 This project is a simple game where the user has to 
                 <b>guess a password</b>. The password is a string of 4 
-                characters, which can be letters or numbers. The user 
-                has as many attempts to guess the password as they want.
+                numbers. The user has as many attempts to guess the 
+		password as they want.
                 <br><br>
                 The game is developed using <b>HTML</b>, <b>CSS</b>, and 
                 <b>JavaScript</b>. It is a great way to practice your 
@@ -113,9 +113,8 @@ const translations = {
             Confira o projeto no GitHub clicando no botão abaixo.`,
         projectsDescription3: 
             `Este projeto é um jogo simples onde o usuário precisa <b>adivinhar 
-            uma senha</b>. A senha é uma sequência de 4 caracteres, que podem 
-            ser letras ou números. O usuário tem várias tentativas para adivinhar 
-            a senha.
+            uma senha</b>. A senha é uma sequência de 4 números. O usuário tem 
+	    várias tentativas para adivinhar a senha.
             <br><br> 
             O jogo foi desenvolvido usando <b>HTML</b>, <b>CSS</b> e <b>JavaScript</b>. 
             É uma ótima maneira de praticar suas habilidades de programação e se divertir 
