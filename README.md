@@ -1,36 +1,29 @@
-# Eduardo Costa Braga - Portfolio
+# 🚀 Portfólio Web
+> Projeto da disciplina de [Programação Web e Mobile](https://github.com/Dudubraga/unicap-cc-programacao-web-e-mobile)
+
+## 📖 Visão Geral
 
 Welcome to my personal portfolio! This project showcases my projects and skills as a Computer Science student and developer.
 
+- **Instituição:** UNICAP
+- **Professor:** Marcio Bueno
+- **Período:** 2025.1
+
 ![Portfolio Preview](./src/Images/portifolio.png)
-*Espoço Inicial*
 
-## 🌐 Live Demo
-You can view the live version of my portfolio [here](https://portifolio-eduardo-pi.vercel.app/).
+## ✨ Funcionalidades
 
-## 📚 Sections
+- A brief introduction about myself, including my passion for technology, learning, and competitive programming.
+- A list of projects
+- Includes links to my social media profiles and a contact form for direct communication.
+- Displays my expertise in programming languages and tools using badges.
+- 🕹️ Password Game - the portfolio includes a fun implementation of the Bulls and Cows game.
 
-1\. About Me
+## 🛠️ Tecnologias Utilizadas
 
-A brief introduction about myself, including my passion for technology, learning, and competitive programming.
-
-2\. Projects
+- **Frontend**: HTML, JavaScript
+- **Estilização**: CSS
   
-- Competitive Programming: Details my participation in programming contests.
-- Lounge do Açaí: A self-service system for a local business.
-- Password Game: A fun game to guess a 4-digit password.
+## 🌐 Live Demo
 
-3\. Contact
-
-Includes links to my social media profiles and a contact form for direct communication.
-
-4\. Skills
-
-Displays my expertise in programming languages and tools using badges.
-
-## 🕹️ Password Game
-The portfolio includes a fun implementation of the Bulls and Cows game:
-
-- Guess a 4-digit password.
-- View your previous attempts and results (Bulls and Cows).
-- Reveal the secret password with a button.
+Acesse a versão publicada do quiz através deste [link](https://projeto-web-mobile-seven.vercel.app/).
